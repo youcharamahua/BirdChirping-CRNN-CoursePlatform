@@ -1,0 +1,305 @@
+.ai-hero {
+  padding: 38px 0 18px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.ai-hero .hero-copy,
+.hero-side,
+.principle-card,
+.ladder-card,
+.formula-card,
+.template-card,
+.compare-card,
+.studio-card,
+.checklist-card,
+.ethics-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.ai-hero .hero-copy {
+  padding: 38px;
+  color: #fff7ef;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(215, 145, 52, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(31, 90, 73, 0.18), transparent 24%),
+    linear-gradient(135deg, rgba(26, 40, 68, 0.96), rgba(36, 78, 98, 0.95));
+}
+
+.ai-hero h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 0.98;
+}
+
+.ai-hero h1 span {
+  display: block;
+  color: #f3d9a8;
+}
+
+.ai-hero p {
+  margin: 0;
+  color: rgba(255, 247, 239, 0.86);
+  font-size: 17px;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-pills {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-pills span,
+.journey-stage,
+.ladder-step,
+.resource-chip,
+.studio-card small,
+.compare-card small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-pills span {
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff7ef;
+}
+
+.hero-side {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at center, rgba(31, 90, 73, 0.12), transparent 46%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(233, 241, 239, 0.92));
+}
+
+.prompt-orbit {
+  position: relative;
+  width: min(100%, 420px);
+  aspect-ratio: 1 / 1;
+}
+
+.orbit-core,
+.orbit-node {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.orbit-core {
+  inset: 34% 34%;
+  background: linear-gradient(180deg, #214456, #1f5a49);
+  color: #fff7ef;
+  box-shadow: 0 18px 44px rgba(31, 49, 41, 0.2);
+}
+
+.orbit-node {
+  width: 110px;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(31, 49, 41, 0.08);
+  color: var(--forest);
+}
+
+.orbit-node:nth-child(1) { top: 8%; left: 38%; }
+.orbit-node:nth-child(2) { top: 34%; left: 0; }
+.orbit-node:nth-child(4) { top: 34%; right: 0; }
+.orbit-node:nth-child(5) { bottom: 8%; left: 38%; }
+
+.principle-grid,
+.ladder-grid,
+.compare-grid,
+.studio-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.principle-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.principle-card,
+.ladder-card,
+.formula-card,
+.template-card,
+.compare-card,
+.studio-card,
+.checklist-card,
+.ethics-card {
+  padding: 24px;
+}
+
+.principle-index {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.11);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+  font-weight: 900;
+}
+
+.principle-card h3,
+.ladder-card h3,
+.formula-card h3,
+.template-card h3,
+.checklist-card h3 {
+  margin: 16px 0 10px;
+  font-size: 22px;
+}
+
+.principle-card p,
+.principle-card li,
+.ladder-card p,
+.compare-card p,
+.checklist-card li,
+.ethics-card li,
+.studio-card p,
+.formula-card li {
+  color: var(--muted);
+}
+
+.principle-card ul,
+.formula-card ul,
+.checklist-card ul,
+.ethics-card ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.ladder-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ladder-step,
+.studio-card small,
+.compare-card small {
+  padding: 7px 12px;
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.08);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+}
+
+.ladder-card blockquote {
+  margin: 14px 0;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(31, 90, 73, 0.06);
+  border-left: 4px solid var(--sun);
+  color: var(--ink);
+}
+
+.anatomy-layout,
+.studio-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.prompt-template {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.compare-grid {
+  grid-template-columns: 1fr;
+}
+
+.compare-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.compare-bad,
+.compare-good {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(31, 49, 41, 0.08);
+}
+
+.compare-good {
+  background: rgba(31, 90, 73, 0.07);
+}
+
+.compare-why {
+  grid-column: 1 / -1;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(215, 145, 52, 0.1);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.studio-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.studio-card p {
+  margin: 14px 0 0;
+}
+
+@media (max-width: 1120px) {
+  .ai-hero,
+  .principle-grid,
+  .ladder-grid,
+  .anatomy-layout,
+  .studio-layout,
+  .studio-grid,
+  .compare-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .ai-hero .hero-copy,
+  .principle-card,
+  .ladder-card,
+  .formula-card,
+  .template-card,
+  .compare-card,
+  .studio-card,
+  .checklist-card,
+  .ethics-card {
+    padding: 20px;
+  }
+
+  .orbit-node {
+    width: 88px;
+    height: 88px;
+    font-size: 13px;
+  }
+}

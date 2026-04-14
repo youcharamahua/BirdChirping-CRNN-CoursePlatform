@@ -1,0 +1,926 @@
+.training-hero {
+  padding: 38px 0 10px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.training-hero .hero-copy,
+.training-hero .hero-metrics,
+.lab-panel,
+.species-card,
+.chart-card,
+.timeline-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.training-hero .hero-copy {
+  padding: 38px;
+  color: #fff7ef;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(215, 145, 52, 0.2), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(31, 90, 73, 0.16), transparent 20%),
+    linear-gradient(135deg, rgba(20, 44, 37, 0.96), rgba(39, 78, 66, 0.95));
+}
+
+.training-hero h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 0.98;
+}
+
+.training-hero h1 span {
+  display: block;
+  color: #f3d9a8;
+}
+
+.training-hero p {
+  margin: 0;
+  color: rgba(255, 247, 239, 0.86);
+  font-size: 17px;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-pills {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-pills span,
+.pill-stream span,
+.phase-chip,
+.status-tag,
+.species-id,
+.tab-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-pills span {
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff7ef;
+}
+
+.hero-metrics {
+  padding: 22px;
+  display: grid;
+  gap: 16px;
+  align-content: stretch;
+}
+
+.metric-card,
+.summary-item,
+.runtime-card,
+.summary-badge {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(31, 49, 41, 0.08);
+}
+
+.metric-card small,
+.runtime-card small,
+.summary-badge small {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.metric-card strong,
+.summary-item strong,
+.runtime-card strong,
+.summary-badge strong {
+  display: block;
+  font-size: 28px;
+}
+
+.metric-card span,
+.summary-item span,
+.runtime-card span,
+.runtime-card small,
+.source-caption,
+.species-head p,
+.helper-copy {
+  color: var(--muted);
+}
+
+.training-section {
+  padding: 18px 0 12px;
+}
+
+.training-section .section-heading {
+  display: grid;
+  gap: 8px;
+  align-items: start;
+}
+
+.training-section .section-heading p {
+  max-width: 920px;
+}
+
+.workspace-stage {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1.25fr) 360px;
+  gap: 18px;
+  align-items: start;
+}
+
+.stack-column,
+.workspace-side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.metrics-panel {
+  min-width: 0;
+}
+
+.lab-panel {
+  overflow: hidden;
+}
+
+.lab-panel-dark {
+  color: #f8f4ed;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    linear-gradient(135deg, #08130f, #10231b);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.panel-head {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.panel-head-dark {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.panel-head h3 {
+  margin: 6px 0 0;
+  font-size: 24px;
+}
+
+.kicker {
+  color: var(--berry);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lab-panel-dark .kicker,
+.panel-head-dark h3 {
+  color: #f5d3a0;
+}
+
+.status-tag {
+  padding: 7px 10px;
+  background: rgba(31, 90, 73, 0.08);
+  color: var(--forest);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.status-tag-dark {
+  color: #f8e5bf;
+  background: rgba(215, 145, 52, 0.12);
+  border-color: rgba(215, 145, 52, 0.16);
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+.blueprint-shell {
+  margin-top: 0;
+  min-width: 0;
+}
+
+.blueprint-shell .panel-body {
+  padding: 18px;
+}
+
+.summary-grid,
+.runtime-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pill-stream {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-stream span {
+  padding: 8px 12px;
+  background: rgba(31, 90, 73, 0.08);
+  color: var(--forest);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.control-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.control-form span {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.control-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(31, 49, 41, 0.12);
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.panel-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blueprint-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.summary-badge {
+  min-height: 92px;
+  padding: 14px 16px;
+}
+
+.blueprint-shell .summary-badge {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.blueprint-shell .summary-badge small {
+  color: rgba(248, 244, 237, 0.66);
+}
+
+.blueprint-shell .summary-badge strong {
+  color: #fff7ef;
+}
+
+.summary-badge strong {
+  font-size: 18px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.blueprint-toolbar {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.blueprint-hint {
+  display: grid;
+  gap: 4px;
+}
+
+.blueprint-hint strong {
+  color: #f8e5bf;
+}
+
+.blueprint-hint span {
+  color: rgba(248, 244, 237, 0.72);
+  font-size: 13px;
+}
+
+.blueprint-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blueprint-button,
+.blueprint-zoom-label {
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8f4ed;
+  font-weight: 700;
+}
+
+.blueprint-button {
+  min-width: 40px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.blueprint-button-wide {
+  min-width: 96px;
+}
+
+.blueprint-zoom-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 66px;
+  padding: 0 16px;
+}
+
+.blueprint-viewport {
+  margin-top: 14px;
+  min-height: 520px;
+  overflow: auto;
+  border-radius: 28px;
+  cursor: grab;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.03);
+  background-size: 30px 30px, 30px 30px, auto;
+}
+
+.blueprint-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.blueprint-stage {
+  width: calc(2320px * var(--blueprint-scale, 1));
+  height: calc(560px * var(--blueprint-scale, 1));
+  position: relative;
+}
+
+.blueprint-stage-inner {
+  width: 2320px;
+  height: 560px;
+  position: relative;
+  transform-origin: top left;
+  transform: scale(var(--blueprint-scale, 1));
+}
+
+.graph-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.graph-edge {
+  fill: none;
+  stroke: rgba(240, 211, 162, 0.32);
+  stroke-width: 4;
+  color: rgba(240, 211, 162, 0.32);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.graph-edge.is-ready {
+  stroke: rgba(240, 211, 162, 0.5);
+  color: rgba(240, 211, 162, 0.5);
+}
+
+.graph-edge.is-active {
+  stroke: #f5c779;
+  color: #f5c779;
+  stroke-dasharray: 8 8;
+  animation: dashMove 1.8s linear infinite;
+}
+
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+
+.graph-node {
+  position: absolute;
+  width: var(--node-width, 156px);
+  min-height: 108px;
+  padding: 14px 16px;
+  transform: translate(-50%, -50%);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+  display: grid;
+  align-content: center;
+}
+
+.graph-node strong,
+.graph-node span {
+  display: block;
+}
+
+.graph-node strong {
+  font-size: 15px;
+}
+
+.graph-node span {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(248, 244, 237, 0.72);
+}
+
+.graph-node.is-ready {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.graph-node.is-active {
+  border-color: rgba(245, 199, 121, 0.65);
+  box-shadow: 0 0 0 1px rgba(245, 199, 121, 0.18), 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.tone-source { background: rgba(33, 88, 70, 0.2); }
+.tone-process { background: rgba(69, 112, 99, 0.2); }
+.tone-feature { background: rgba(72, 113, 80, 0.2); }
+.tone-model { background: rgba(215, 145, 52, 0.16); }
+.tone-result { background: rgba(142, 70, 48, 0.18); }
+.tone-feedback { background: rgba(103, 75, 141, 0.16); }
+
+.flow-status-bar {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.flow-status-bar strong {
+  color: #f8e5bf;
+}
+
+.flow-status-bar span {
+  color: rgba(248, 244, 237, 0.82);
+}
+
+.blueprint-notes {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.blueprint-note-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f8e5bf;
+}
+
+.blueprint-notes ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: rgba(248, 244, 237, 0.82);
+}
+
+.blueprint-notes li {
+  margin-bottom: 8px;
+}
+
+.charts-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.chart-card,
+.timeline-card {
+  padding: 18px;
+}
+
+.timeline-card {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.chart-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: 170px;
+}
+
+.chart-grid,
+.chart-axis {
+  stroke: rgba(31, 49, 41, 0.1);
+  stroke-width: 1;
+}
+
+.chart-line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.train-line { stroke: #1f5a49; }
+.val-line { stroke: #d79134; }
+.acc-line { stroke: #8e4630; }
+
+.chart-empty,
+.empty-state {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
+}
+
+.phase-chip {
+  padding: 10px 14px;
+  background: rgba(31, 90, 73, 0.08);
+  color: var(--forest);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+}
+
+.phase-chip.is-active {
+  color: #fff7ef;
+  background: var(--forest);
+}
+
+.phase-chip.is-ready {
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.14);
+  border-color: rgba(31, 90, 73, 0.18);
+}
+
+.log-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.dataset-overview-panel {
+  margin-bottom: 18px;
+}
+
+.log-item {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(31, 49, 41, 0.08);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.runtime-card-wide {
+  grid-column: 1 / -1;
+}
+
+.upload-preview {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.upload-preview.is-hidden {
+  display: none;
+}
+
+.inference-result {
+  margin-top: 18px;
+}
+
+.inference-card {
+  display: grid;
+  gap: 14px;
+}
+
+.inference-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.upload-spectrogram {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 49, 41, 0.08);
+}
+
+.prediction-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.prediction-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(31, 49, 41, 0.08);
+}
+
+.species-gallery {
+  display: grid;
+  gap: 18px;
+}
+
+.species-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) minmax(0, 1fr);
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.species-overview {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 14px;
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(31, 90, 73, 0.05), rgba(255, 255, 255, 0.22));
+  border-right: 1px solid rgba(31, 49, 41, 0.08);
+}
+
+.species-image {
+  height: 100%;
+  min-height: 240px;
+  border-radius: 22px;
+  background: rgba(31, 49, 41, 0.08);
+  overflow: hidden;
+}
+
+.species-image img,
+.preview-panel img {
+  width: 100%;
+  display: block;
+}
+
+.species-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-panel img {
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.species-preview {
+  padding: 22px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  min-width: 0;
+}
+
+.species-head {
+  display: flex;
+  gap: 14px;
+  align-items: start;
+}
+
+.species-copy {
+  min-width: 0;
+}
+
+.species-head h3 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.species-head p {
+  margin: 0;
+}
+
+.species-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.species-meta span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(31, 90, 73, 0.08);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+  color: var(--forest);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.species-id {
+  min-width: 48px;
+  padding: 8px 10px;
+  background: rgba(31, 90, 73, 0.1);
+  color: var(--forest);
+  border: 1px solid rgba(31, 90, 73, 0.14);
+}
+
+.species-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-button {
+  border: 1px solid rgba(31, 90, 73, 0.12);
+  background: rgba(31, 90, 73, 0.08);
+  color: var(--forest);
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.tab-button.is-active {
+  color: #fff7ef;
+  background: var(--forest);
+}
+
+.preview-stack {
+  position: relative;
+  min-height: 260px;
+}
+
+.preview-panel {
+  display: none;
+  min-height: 260px;
+  padding: 18px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(31, 49, 41, 0.08);
+  background: rgba(255, 255, 255, 0.62);
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-panel.is-visible {
+  display: flex;
+}
+
+.preview-panel audio {
+  width: 100%;
+  margin-top: 0;
+}
+
+.source-caption {
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.dataset-credit {
+  margin-top: 18px;
+  padding: 20px 22px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, rgba(31, 90, 73, 0.08), rgba(215, 145, 52, 0.12));
+  border: 1px solid rgba(31, 49, 41, 0.1);
+}
+
+.dataset-credit strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.dataset-credit a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  color: var(--forest);
+  text-decoration: none;
+}
+
+.dataset-credit p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+@media (max-width: 1480px) {
+  .workspace-stage {
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+
+  .workspace-side-right {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1280px) {
+  .workspace-stage,
+  .training-hero,
+  .charts-layout,
+  .workspace-side-right {
+    grid-template-columns: 1fr;
+  }
+
+  .blueprint-summary,
+  .summary-grid,
+  .runtime-grid,
+  .field-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .graph-node {
+    min-width: 118px;
+  }
+}
+
+@media (max-width: 860px) {
+  .training-hero .hero-copy,
+  .panel-body,
+  .species-preview,
+  .species-overview {
+    padding: 18px;
+  }
+
+  .species-card {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .species-image {
+    min-height: 220px;
+  }
+
+  .blueprint-summary,
+  .summary-grid,
+  .runtime-grid,
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blueprint-toolbar {
+    align-items: start;
+  }
+
+  .graph-node {
+    width: 132px;
+    min-width: 132px;
+  }
+
+  .flow-status-bar {
+    position: static;
+    margin: 18px 18px 0;
+    display: grid;
+  }
+}

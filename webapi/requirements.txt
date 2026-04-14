@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9
+
+# Torch & Audio
+# 若已在系统层安装，可按需锁定或移除；以下为常用版本区间
+torch>=2.2
+torchaudio>=2.2
+torchvision>=0.17
+
+# 音频解码回退
+librosa>=0.10.1
+soundfile>=0.12
+numpy>=1.23
+

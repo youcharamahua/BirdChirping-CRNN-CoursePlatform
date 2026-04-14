@@ -1,0 +1,337 @@
+body {
+  line-height: 1.7;
+}
+
+.code-shell {
+  width: min(calc(100% - 32px), var(--max-width));
+  margin: 0 auto;
+  padding: 28px 0 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.code-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.hero-card,
+.arch-card,
+.step-card,
+.shape-card,
+.code-aside {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.hero-card {
+  overflow: hidden;
+  padding: 34px;
+  color: #fff7ef;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(215, 145, 52, 0.2), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(31, 90, 73, 0.16), transparent 20%),
+    linear-gradient(135deg, rgba(20, 44, 37, 0.96), rgba(39, 78, 66, 0.95));
+  position: relative;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -100px;
+  top: -120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 239, 212, 0.26), transparent 72%);
+}
+
+.hero-card h1 {
+  margin: 16px 0 12px;
+  font-size: clamp(36px, 6vw, 66px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-card h1 span {
+  display: block;
+  color: #f3d9a8;
+}
+
+.hero-card p {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255, 247, 239, 0.86);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-actions,
+.hero-pills,
+.shape-stream {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-actions,
+.hero-pills {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-actions {
+  margin-top: 24px;
+}
+
+.hero-pills {
+  margin-top: 22px;
+}
+
+.hero-pills span,
+.shape-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hero-pills span {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff7ef;
+}
+
+.code-aside {
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.aside-label,
+.step-label,
+.shape-step {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.aside-label {
+  color: var(--berry);
+  background: rgba(215, 145, 52, 0.12);
+  border: 1px solid rgba(215, 145, 52, 0.16);
+}
+
+.step-label {
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.08);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+}
+
+.code-aside h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.code-aside p,
+.arch-card p,
+.step-copy p,
+.shape-card p,
+.shape-card li {
+  color: var(--muted);
+}
+
+.aside-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.aside-list li {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.code-section {
+  padding: 20px 0 0;
+}
+
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.arch-card {
+  padding: 22px;
+}
+
+.arch-card small {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.08);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.arch-card h3,
+.step-copy h3,
+.shape-card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.arch-card ul,
+.step-copy ul,
+.shape-card ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.arch-card li,
+.step-copy li,
+.shape-card li {
+  margin-bottom: 8px;
+}
+
+.code-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.step-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.step-copy {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.shape-chip {
+  color: var(--forest);
+  background: rgba(31, 90, 73, 0.08);
+  border: 1px solid rgba(31, 90, 73, 0.12);
+}
+
+.step-code {
+  min-width: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(10, 19, 16, 0.98), rgba(15, 29, 24, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.code-toolbar {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: rgba(248, 244, 237, 0.76);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+}
+
+.step-code pre {
+  margin: 0;
+  padding: 20px 22px 24px;
+  overflow: auto;
+  color: #f8f4ed;
+  font-size: 13px;
+  line-height: 1.65;
+  font-family: "Cascadia Code", Consolas, monospace;
+}
+
+.step-code code {
+  white-space: pre;
+}
+
+.shape-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.shape-card {
+  padding: 22px;
+}
+
+.shape-step {
+  margin-bottom: 12px;
+  color: var(--berry);
+  background: rgba(215, 145, 52, 0.12);
+  border: 1px solid rgba(215, 145, 52, 0.16);
+}
+
+.shape-card strong {
+  display: block;
+  font-size: 24px;
+}
+
+.shape-card small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.shape-stream {
+  margin-top: 16px;
+}
+
+@media (max-width: 1280px) {
+  .code-hero,
+  .step-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .code-shell {
+    width: min(calc(100% - 24px), var(--max-width));
+  }
+
+  .hero-card,
+  .code-aside,
+  .step-card,
+  .arch-card,
+  .shape-card {
+    padding: 18px;
+  }
+
+  .hero-card h1 {
+    font-size: clamp(32px, 8vw, 54px);
+  }
+
+  .step-code pre {
+    padding: 18px;
+  }
+}
